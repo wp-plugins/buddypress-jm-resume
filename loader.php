@@ -4,6 +4,7 @@ Plugin Name: BuddyPress JM Resume
 Plugin URI: http://opentuteplus.com/buddypress-jm-resume/
 Description: This BuddyPress component is for adding resume links in user profile ( for BuddyPress ). This plugin needs BuddyPress,WP Job Manager,WP Job Manager - Applications,WP Job Manager - Resume Manager.
 Author: Kishore
+Author URI: http://blog.kishorechandra.co.in/
 Version: 1.0.0
 Requires at least: WP 3.8, BuddyPress 2.1.1
 Tested up to: WP 4.1, BuddyPress 2.1.1

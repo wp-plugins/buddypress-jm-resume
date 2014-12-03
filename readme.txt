@@ -1,6 +1,6 @@
 === BuddyPress JM Resume ===
 Contributors: kishores
-Donate link: 
+Donate link: http://blog.kishorechandra.co.in/
 Tags: buddypress, wp-job-manager,wp-job-manager-applications,wp-job-manager-resume-manager
 Requires at least: WP 3.8, BuddyPress 2.1.1
 Tested up to: WP 4.1, BuddyPress 2.1.1
