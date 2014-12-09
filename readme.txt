@@ -16,6 +16,12 @@ BuddyPress JM Resume is for adding resume links in user profile ( for BuddyPress
 
 * If you are using WP Job Manager - Applications to submit applications, then it will display resume in BuddyPress user profile as BP_Component
 
+
+<blockquote>
+  <p><strong>Priority Support</strong></p>
+  
+  <p>If you are looking for more features, paid support or Custom WordPress Work, then you can hire me too My email id : babunsahoo@gmail.com .</p>
+</blockquote>
 == Installation ==
 
 = Automatic installation =
