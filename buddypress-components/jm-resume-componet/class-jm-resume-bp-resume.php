@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) )
 	exit;
 
 /**
- * Description of Rt_Hrm_Bp_Hrm
+ * Description of JM_Resume_Bp_Resume
  *
  * @author kishore
  */
