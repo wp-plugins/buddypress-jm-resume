@@ -30,8 +30,8 @@ if ( ! defined( 'BUDDYPRESS_JM_RESUME ' ) ) {
  */
 load_plugin_textdomain( 'buddypress_jm_resume', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 
-function init_pm_bp_component(){
+function init_jm_bp_component(){
     include( BUDDYPRESS_JM_RESUME .'class-jm-resume-bp-resume.php' );
 }
 
-add_action( 'bp_loaded', 'init_pm_bp_component', 40 );
+add_action( 'bp_loaded', 'init_jm_bp_component', 40 );
