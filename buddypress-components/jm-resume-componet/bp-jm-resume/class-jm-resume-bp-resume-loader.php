@@ -96,7 +96,6 @@ if ( !class_exists( 'JM_Resume_Bp_Resume_Loader' ) ) {
 		 * @global obj $bp
 		 */
 		function setup_nav( $nav = array(), $sub_nav = array() ) {
-			global $rt_pm_bp_pm;
 			
             $nav_name = __( 'Resume', 'buddypress_jm_resume' );
 
