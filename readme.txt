@@ -4,7 +4,7 @@ Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_i
 Tags: buddypress, wp-job-manager,wp-job-manager-applications,wp-job-manager-resume-manager
 Requires at least: WP 3.8, BuddyPress 2.1.1
 Tested up to: WP 4.1, BuddyPress 2.1.1
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 
 This BuddyPress component is for adding resume links in user profile ( for BuddyPress ).
 
@@ -53,12 +53,17 @@ Note: It only works for Logged in user. If wants to links user manually, then ad
 
 
 == Screenshots ==
+1. screenshot-1.png
 
 
 == Changelog ==
+= 1.0.1 =
+* Bug fix and resume listings
 = 1.0.0 =
 * First stable release.
 
 == Upgrade Notice ==
+= 1.0.1 =
+* Bug fix and resume listings
 = 1.0.0 =
 * First stable release.
