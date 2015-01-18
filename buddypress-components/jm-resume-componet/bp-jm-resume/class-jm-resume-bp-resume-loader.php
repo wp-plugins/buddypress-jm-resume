@@ -96,17 +96,15 @@ if ( !class_exists( 'JM_Resume_Bp_Resume_Loader' ) ) {
 		 * @global obj $bp
 		 */
 		function setup_nav( $nav = array(), $sub_nav = array() ) {
-			if ( ! class_exists( 'WP_Job_Manager' ) )
-				return;
 			
             $nav_name = __( 'Resume', 'buddypress_jm_resume' );
 
-			// Add 'Resume' to the main navigation
+			// Add 'hrm' to the main navigation
 			$main_nav = array(
 				'name' 		      => __( 'Resume', 'buddypress_jm_resume' ),
 				'slug' 		      => $this->id,
 				'position' 	      => $this->menu_order,
-				'screen_function'     => 'bp_jm_screen_resumes',
+				'screen_function'     => 'bp_jm_resumes',
 				'default_subnav_slug' => 'resume',
 			);
 
@@ -117,64 +115,11 @@ if ( !class_exists( 'JM_Resume_Bp_Resume_Loader' ) ) {
                     $user_domain = bp_loggedin_user_domain();
             } else {
                     return;
-            }
-			
-			$job_manager_resume_link = trailingslashit( $user_domain . $this->slug );
-			
-			// Add My Resume nav item
-			if ( get_current_user_id() == bp_displayed_user_id() ) {
-				$sub_nav[] = array(
-					'name'            => __( 'My Resume', 'buddypress_jm_resume' ),
-					'slug'            => 'my-resume',
-					'parent_url'      => $job_manager_resume_link,
-					'parent_slug'     => $this->slug,
-					'screen_function' => 'bp_jm_screen_my_resumes',
-					'position'        => 20,
-					'user_has_access' => bp_core_can_edit_settings()
-				);
-			}          
+            }          
 			
 			parent::setup_nav( $main_nav, $sub_nav );
 
 		}
-		
-	/**
-	 * Set up the Toolbar
-	 */
-	public function setup_admin_bar( $wp_admin_nav = array() ) {
-		
-		if ( ! class_exists( 'WP_Job_Manager' ) )
-			return;
-
-		// The instance
-		$bp = buddypress();
-
-		// Menus for logged in user
-		if ( is_user_logged_in() ) {
-
-			// Setup the logged in user variables
-			$user_domain   = bp_loggedin_user_domain();
-			$job_manager_resume_link = trailingslashit( $user_domain . $this->slug );
-
-			// Add My Resume menu
-			$wp_admin_nav[] = array(
-				'parent' => $bp->my_account_menu_id,
-				'id'     => 'my-account-' . $this->id,
-				'title'  => __( 'Resume', 'buddypress_jm_resume' ),
-				'href'   => trailingslashit( $job_manager_resume_link )
-			);
-			
-			// Job Dashboard
-			$wp_admin_nav[] = array(
-				'parent' => 'my-account-' . $this->id,
-				'id'     => 'my-account-' . $this->id . '-job-dashboard',
-				'title'  => __( 'My Resume', 'buddypress_jm_resume' ),
-				'href'   => trailingslashit( $job_manager_resume_link . 'my-resume' )
-			);
-		}
-
-		parent::setup_admin_bar( $wp_admin_nav );
-	}
 		
 
 	
