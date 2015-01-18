@@ -46,6 +46,7 @@ class WP_Job_Manager_Resumes_Links {
 
 		echo "<style id='review_restaurant_colors'>\n";
 		echo ".fieldset-candidate_id{display: none;}";
+		echo ".fieldset-candidate_user_id{display: none;}";
 		echo ".buddypress_jm_resume ul li{list-style:none;left:0;}";
 
 		echo "</style>\n";
