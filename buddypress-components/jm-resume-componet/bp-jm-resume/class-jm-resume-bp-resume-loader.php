@@ -27,7 +27,7 @@ if ( !class_exists( 'JM_Resume_Bp_Resume_Loader' ) ) {
                     
                         parent::start(
                                 'resume',
-                                __( 'Resume', 'buddypress_jm_resume' ),
+                                __( 'My Resume', 'buddypress_jm_resume' ),
                                BUDDYPRESS_JM_RESUME_PATH,
                                 array(
                                     'adminbar_myaccount_order' => 999999
@@ -97,11 +97,11 @@ if ( !class_exists( 'JM_Resume_Bp_Resume_Loader' ) ) {
 		 */
 		function setup_nav( $nav = array(), $sub_nav = array() ) {
 			
-            $nav_name = __( 'Resume', 'buddypress_jm_resume' );
+            $nav_name = __( 'My Resume', 'buddypress_jm_resume' );
 
 			// Add 'hrm' to the main navigation
 			$main_nav = array(
-				'name' 		      => __( 'Resume', 'buddypress_jm_resume' ),
+				'name' 		      => __( 'My Resume', 'buddypress_jm_resume' ),
 				'slug' 		      => $this->id,
 				'position' 	      => $this->menu_order,
 				'screen_function'     => 'bp_jm_resumes',
