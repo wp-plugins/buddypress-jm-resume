@@ -12,8 +12,6 @@ This BuddyPress component is for adding resume links in user profile ( for Buddy
 
 BuddyPress JM Resume is for adding resume links in user profile ( for BuddyPress ). This plugin needs BuddyPress,WP Job Manager,WP Job Manager - Applications,WP Job Manager - Resume Manager. 
 
-<strong>Plugin Demo: http://buddypress-job-manager.opentuteplus.com/members/admin/resume/</strong>
-
 <blockquote>
   <p><strong> Buddypress Job Manager -- Premium plugin (coming Soon)</strong></p>
   <p>This BuddyPress component is for adding Job Manager to user profile ( for BuddyPress ). This plugin needs BuddyPress,WP Job Manager and compatible with WP Job Manager - Applications,WP Job Manager - Resume Manager, WP Job Manager - Bookmarks,WP Job Manager - Job Alerts.</p>
