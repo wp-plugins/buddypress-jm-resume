@@ -53,7 +53,7 @@ Note: It only works for Logged in user. If wants to links user manually, then ad
 
 
 == Screenshots ==
-* screenshot-1.png
+1. screenshot-1.png
 
 
 == Changelog ==
