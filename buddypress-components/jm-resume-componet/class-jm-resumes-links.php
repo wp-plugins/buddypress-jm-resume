@@ -55,13 +55,16 @@ class WP_Job_Manager_Resumes_Links {
 	function display_user_resume_ref() {
 		global $post,$bp, $wpdb, $wp_query, $paged;
 		$user_id = $bp->displayed_user->id;
-		$post_metas = $wpdb->get_col( "SELECT post_id from {$wpdb->postmeta} WHERE meta_key = '_candidate_user_id' and meta_value = {$bp->displayed_user->id} ");
+		$resume_ids = $wpdb->get_col( "SELECT post_id from {$wpdb->postmeta} WHERE meta_key = '_candidate_user_id' and meta_value = {$bp->displayed_user->id} ");
 		?>
 		<ul>
 		<?php
-		foreach ($post_metas as $post_meta){
-			$post = get_post( $post_meta );
-			if ( $post->post_status != 'draft' ) {
+		foreach ($resume_ids as $resume_id){
+			if ('resume' != get_post_type($resume_id) )
+				continue;
+			
+			$post = get_post( $resume_id );
+			if ( $post->post_status == 'publish' ) {
 			?>
 			<li>
 			<?php
