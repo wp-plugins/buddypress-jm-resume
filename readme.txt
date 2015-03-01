@@ -60,12 +60,16 @@ Note: It only works for Logged in user. If wants to links user manually, then ad
 
 
 == Changelog ==
+= 1.0.2 =
+* Bug fix and fixed 404 found resume listings
 = 1.0.1 =
 * Bug fix and resume listings
 = 1.0.0 =
 * First stable release.
 
 == Upgrade Notice ==
+= 1.0.2 =
+* Bug fix and fixed 404 found resume listings
 = 1.0.1 =
 * Bug fix and resume listings
 = 1.0.0 =
